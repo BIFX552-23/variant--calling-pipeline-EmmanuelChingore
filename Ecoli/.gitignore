@@ -4,3 +4,6 @@ trimmed_fastq/
 *.csv
 untrimmed_fastq
 .snakemake/
+qc/
+?
+SnakefileY/
