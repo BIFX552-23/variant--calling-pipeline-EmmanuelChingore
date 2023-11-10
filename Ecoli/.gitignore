@@ -7,4 +7,4 @@ untrimmed_fastq
 qc/
 ?
 SnakefileY/
-trimmed_fastq_small
+trimmed_fastq_small/
