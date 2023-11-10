@@ -21,7 +21,7 @@ rule trim:
     ILLUMINACLIP:untrimmed_fastq/NexteraPE-PE.fa:2:40:15
   """
 
-rule fastqc:
+rule fastq:
  output:
   html = "qc/{sample}.trimmed_fastqc.html",
   zip = "qc/{sample}.trimmed_fastqc.zip" 
@@ -66,4 +66,4 @@ rule mpileup:
   fasta = "data/ecoli_rel606.fasta",
   bam = "results/bam/{sample}.aligned.sorted.bam"
  shell:
-  "/BIODATA/programs/bin/bcftools mpileup -O b -o {output} -f {input.fasta} {input.bam}"
+  "/BIODATA/program/bin/bcftools mpileup -O b -o {output} -f {input.fasta} {input.bam}"
